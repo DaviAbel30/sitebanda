@@ -1,0 +1,153 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+/* Header */
+.header {
+  background: #032342;
+  padding-inline: 16px;
+  text-align: center;
+}
+
+h2{
+  color: white;
+}
+
+.logo img {
+  height: 60px;
+  margin: 10px 0;
+  animation: fade-in-out 4s infinite;
+}
+
+/* Animação para movimento horizontal */
+@keyframes fade-in-out {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+span{
+  color: white;
+}
+
+/* Seção Sobre a Banda */
+.about-band {
+  text-align: center;
+  padding: 25px;
+}
+
+.about-band h1 {
+  color: #023b73;
+  margin-bottom: 10px;
+}
+
+.about-band p {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* Carrossel */
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Ajuste nas transições para dar mais suavidade ao carrossel */
+.carousel {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  transition: transform 0.5s ease;
+}
+.card {
+  background-color: #032342;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.card img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Estilo para os botões de navegação */
+#left, #right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+#left {
+  left: 10px;
+}
+
+#right {
+  right: 10px;
+}
+
+#left:hover, #right:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+.footer {
+  background-color: #032342;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-icon img {
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
